@@ -63,11 +63,11 @@ class ArtaEncryptor:
 def main():
     arta_key = input("Enter the key : ")
     choice = input("Encrypt or Decrypt ? ( E/D ): ")
-    if choice == "E" or choice == "e":
+    if choice in ["E", "e"]:
         arta_word = input("Enter the word you want to encrypt : ")
         arta_encryption = ArtaEncryptor(arta_word, arta_key)
         print("The encrypted word is " + arta_encryption.encrypt())
-    elif choice == "D" or choice == "d":
+    elif choice in ["D", "d"]:
         arta_word = input("Enter the word you want to decrypt : ")
         arta_encryption = ArtaEncryptor(arta_word, arta_key)
         print("The decrypted word is " + arta_encryption.decrypt())
