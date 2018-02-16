@@ -1,5 +1,5 @@
 # Made by Arta (Alex Kim)
-# This code is to encrypt a word using a key with the same amount of letters
+# This code encrypts a word using a key with the same amount of letters
 # It uses alphabetical indices to determine what letter to encrypt to
 
 # Using an alphabet list to generate a list of letters to encrypt from
