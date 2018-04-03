@@ -1,6 +1,6 @@
 
 # Made by Arta (Alex Kim)
-# This code is to encrypt a word using a key with the same amount of letters
+# This code encrypts a word using a key with the same amount of letters
 # It uses alphabetical indices to determine what letter to encrypt to
 
 # Using an alphabet list to generate a list of letters to encrypt from
@@ -69,11 +69,11 @@ class ArtaEncryptor: # Creating the class
 def main():
     arta_key = input("Enter the key : ")
     choice = input("Encrypt or Decrypt ? ( E/D ): ")
-    if choice == "E" or choice == "e":
+    if choice in ["E", "e"]:
         arta_word = input("Enter the word you want to encrypt : ")
         arta_encryption = ArtaEncryptor(arta_word, arta_key)
         print("The encrypted word is " + arta_encryption.encrypt())
-    elif choice == "D" or choice == "d":
+    elif choice in ["D", "d"]:
         arta_word = input("Enter the word you want to decrypt : ")
         arta_encryption = ArtaEncryptor(arta_word, arta_key)
         print("The decrypted word is " + arta_encryption.decrypt())
