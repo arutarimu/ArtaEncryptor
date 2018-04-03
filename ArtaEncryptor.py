@@ -14,7 +14,7 @@ for y in range(0, int(len(alphabet_list)/2)):
     FINAL_LIST.append(alphabet_list[len(alphabet_list) - y - 1])
 
 
-class ArtaEncryptor: # Creating the class
+class ArtaEncryptor:  # Creating the class
 
     def __init__(self, word="", key=""):
         self.word = word
